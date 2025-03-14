@@ -5,7 +5,7 @@ library(dplyr)
 library(stringr)
 
 # Read a csv file
-df <- read_csv("C:/Users/user/Downloads/graduate_survey.csv")
+df <- read_csv("graduate_survey.csv")
 
 # Selecting relevant columns
 selected_data <- select(df, Campus, StudyField, Branch, Role, EduLevel, ProgLang, Databases, Platform, WebFramework, Industry, AISearch,AITool, Employment)
