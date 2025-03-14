@@ -10,7 +10,7 @@ library(readr)
 #
 #file.exists("subset_data.csv")
 
-#file.exists("C:/Users/user/Downloads/subset_data.csv")
+#file.exists("subset_data.csv")
 
 #setwd("C:/Users/user/Downloads")  
 #subset_data <- read_csv("subset_data.csv") 
