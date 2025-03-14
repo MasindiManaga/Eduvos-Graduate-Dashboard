@@ -18,16 +18,12 @@ library(readr)
 library(stringr)
 
 
-subset_data <- read_csv("subset_data.csv") 
+subset_data <- read_csv("subset_data.csv")
 ```
+
 #{.sidebar}
 
 ```{r}
-sliderInput('sampleSize', 'Sample Size', 
-            min=1, max=nrow(subset_data),
-            value=min(1000, nrow(subset_data)), 
-            step=500, round=0)
-
 br()
 checkboxGroupInput("tech_tools","Select Tech Tools:", choices = names(subset_data)[names(subset_data) %in% c("ProgLang", "Databases", "AISearch", "AITool", "WebFramework", "Platform")])
 ```
@@ -64,5 +60,3 @@ output$techTable <- renderDT({
   datatable(filtered_data())
 })
 ```
-
-
